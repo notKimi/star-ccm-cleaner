@@ -1,0 +1,42 @@
+name: Windows build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Build the Windows package
+        shell: pwsh
+        run: .\package.ps1 -JavaHome $env:JAVA_HOME
+      - name: Check backup handling and failure reporting
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build\smoke, build\test-fixtures | Out-Null
+          javac -encoding UTF-8 -cp dist\StarCleanupGui.jar -d build\smoke tests\BackupCleanupSmoke.java
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $guiJar = Join-Path $PWD 'dist\StarCleanupGui.jar'
+          $smokeClasses = Join-Path $PWD 'build\smoke'
+          java -cp "$guiJar;$smokeClasses" BackupCleanupSmoke (Join-Path $PWD 'build\test-fixtures')
+          exit $LASTEXITCODE
+      - name: Upload the Windows ZIP and checksum
+        uses: actions/upload-artifact@v7
+        with:
+          name: star-ccm-cleaner-windows
+          path: |
+            release/*.zip
+            release/SHA256SUMS.txt
+          if-no-files-found: error

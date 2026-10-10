@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">STAR-CCM+ Cleaner</title>
+  <desc id="description">Reclaim space from your simulation archive. Mesh, solution, and backup cleanup for Windows.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101d32"/>
+      <stop offset="1" stop-color="#142e3b"/>
+    </linearGradient>
+    <linearGradient id="mesh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35d6b1" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#7bbfe9" stop-opacity=".25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="url(#background)"/>
+  <path d="M868 10 936 54 1004 17 1087 55 1175 26 1240 83 1165 124 1224 182 1140 235 1185 300 1088 336 1020 274 950 316 878 269 893 187 824 126Z M868 10 824 126 936 54 893 187 1004 17 1026 131 1087 55 1105 170 1175 26 1165 124 1105 170 1224 182 1140 235 1020 274 1105 170 1088 336 M824 126 893 187 1026 131 936 54 M893 187 878 269 1020 274 950 316 M893 187 1020 274 1026 131 1105 170 M1140 235 1185 300 M1026 131 1087 55 M1165 124 1026 131" fill="none" stroke="url(#mesh)" stroke-width="1.6"/>
+  <g fill="#57dac2">
+    <circle cx="936" cy="54" r="4"/>
+    <circle cx="893" cy="187" r="4"/>
+    <circle cx="1026" cy="131" r="4"/>
+    <circle cx="1105" cy="170" r="4"/>
+    <circle cx="1020" cy="274" r="4"/>
+    <circle cx="1140" cy="235" r="4"/>
+  </g>
+  <rect x="52" y="44" width="174" height="28" rx="14" fill="#1e4752"/>
+  <text x="68" y="63" fill="#83e9d7" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">CFD HOUSEKEEPING</text>
+  <text x="52" y="140" fill="#f5f9ff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">STAR-CCM+ Cleaner</text>
+  <text x="54" y="184" fill="#c0d1df" font-family="Segoe UI, Arial, sans-serif" font-size="23">Reclaim space from your simulation archive.</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#dce9f1">
+    <text x="54" y="256">GENERATED MESH</text>
+    <circle cx="236" cy="251" r="3" fill="#62dfc8"/>
+    <text x="254" y="256">SOLUTION DATA</text>
+    <circle cx="418" cy="251" r="3" fill="#62dfc8"/>
+    <text x="436" y="256">.sim~ BACKUPS</text>
+  </g>
+</svg>

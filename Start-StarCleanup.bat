@@ -1,4 +1,7 @@
 @echo off
+rem SPDX-License-Identifier: MIT
+rem Copyright (c) 2026 Luchen Wang
+rem Author: Luchen Wang
 setlocal EnableExtensions
 set "APP_DIR=%~dp0"
 

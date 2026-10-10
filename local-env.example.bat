@@ -1,4 +1,7 @@
 @echo off
+rem SPDX-License-Identifier: MIT
+rem Copyright (c) 2026 Luchen Wang
+rem Author: Luchen Wang
 rem Copy this file to local-env.bat beside Start-StarCleanup.bat and edit the paths.
 rem The local-env.bat file is ignored by Git.
 set "STAR_CCM_EXE=C:\Path\To\starccm+.bat"

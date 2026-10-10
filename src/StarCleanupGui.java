@@ -238,7 +238,7 @@ public final class StarCleanupGui extends JFrame {
     private long scanVersion;
 
     private StarCleanupGui(Path toolDirectory, String initialStarPath) {
-        super("STAR-CCM+ simulation cleanup");
+        super("STAR-CCM+ Cleaner");
         this.toolDirectory = toolDirectory;
         this.macroPath = toolDirectory.resolve("StarCleanup.java");
         this.logDirectory = toolDirectory.resolve("logs");

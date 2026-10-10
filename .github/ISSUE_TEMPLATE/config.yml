@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the troubleshooting guide
+    url: https://github.com/notKimi/star-ccm-cleaner/blob/main/docs/troubleshooting.md
+    about: Help with launch errors, incomplete saves, mesh cleanup, and performance.

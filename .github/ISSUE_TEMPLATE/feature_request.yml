@@ -1,0 +1,16 @@
+name: Suggest an improvement
+description: Describe a workflow that could be easier or a compatibility result.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What workflow would you like to improve?
+      description: Describe the task, what is difficult today, and your proposed change.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: STAR-CCM+ compatibility details, if relevant
+      description: Include the exact release/build, action tested, and outcome on a copy of a simulation.

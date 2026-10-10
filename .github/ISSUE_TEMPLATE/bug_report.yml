@@ -1,0 +1,39 @@
+name: Report a problem
+description: Help diagnose a launch, cleanup, or backup problem.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please share redacted logs only. Remove confidential paths, model names, license details, and server addresses; do not upload simulation files."
+  - type: input
+    id: versions
+    attributes:
+      label: App, STAR-CCM+, Windows, and Java versions
+      placeholder: "Cleaner 0.1.0; STAR 2602.0001 / 21.02.008-R8; Windows 11; Java 21"
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Action
+      options:
+        - Launch the app
+        - Clear generated mesh
+        - Clear solution
+        - Clear mesh and solution
+        - Delete selected backups
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What happened, and how can it be reproduced?
+      description: Include expected behavior, concurrent job count, and whether imported meshes are present.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant redacted log lines
+      render: text
