@@ -100,6 +100,6 @@ Contributions are welcome, especially compatibility reports for other STAR relea
 
 ## Author and license
 
-Created and maintained by **Luchen Wang** ([notKimi](https://github.com/notKimi)). Copyright © 2026 Luchen Wang. Released under the [MIT License](LICENSE).
+Created and maintained by **[Luchen Wang (@notKimi)](https://github.com/notKimi)**. Copyright © 2026 Luchen Wang. Released under the [MIT License](LICENSE).
 
 This is an independent community project. Simcenter STAR-CCM+ is a Siemens product; this project is not affiliated with or endorsed by Siemens. No Siemens binaries, licenses, or simulation data are distributed.

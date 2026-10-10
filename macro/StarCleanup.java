@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 Luchen Wang
-// Author: Luchen Wang
+// Author: Luchen Wang (@notKimi)
 // Tested with Simcenter STAR-CCM+ 2602.0001 (build 21.02.008-R8).
 package macro;
 

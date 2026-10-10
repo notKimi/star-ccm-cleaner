@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 Luchen Wang
-// Author: Luchen Wang
+// Author: Luchen Wang (@notKimi)
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -343,6 +343,7 @@ public final class StarCleanupGui extends JFrame {
         bottom.add(logScroll, BorderLayout.CENTER);
         JPanel bottomButtons = new JPanel(new BorderLayout());
         bottomButtons.add(status, BorderLayout.WEST);
+        bottomButtons.add(new JLabel("By Luchen Wang (@notKimi)", JLabel.CENTER), BorderLayout.CENTER);
         JPanel runButtons = new JPanel(new FlowLayout(FlowLayout.RIGHT, 6, 0));
         runButtons.add(stop);
         runButtons.add(run);

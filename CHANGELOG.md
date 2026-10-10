@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Use **Luchen Wang (@notKimi)** in the README, source author headers, and app footer.
+
 ## 0.1.0 — 2026-10-10
 
 First packaged public release, under the name **STAR-CCM+ Cleaner**.
@@ -16,4 +20,4 @@ First packaged public release, under the name **STAR-CCM+ Cleaner**.
 
 Mesh cleanup has been verified with STAR-CCM+ 2602.0001, build 21.02.008-R8. Other STAR releases have not been verified.
 
-Author: Luchen Wang. License: MIT.
+Author: Luchen Wang (@notKimi). License: MIT.

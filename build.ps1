@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Luchen Wang
-# Author: Luchen Wang
+# Author: Luchen Wang (@notKimi)
 
 param(
     [string] $JavaHome
